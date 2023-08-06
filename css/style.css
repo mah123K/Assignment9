@@ -1,0 +1,47 @@
+body
+{
+    background-color: #F7ECDE;
+}
+h1
+{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 50px;
+}
+p
+{
+    text-align: center;
+    margin-top: 100px;
+}
+td
+{
+    text-align: center;
+}
+.textContainer h1 
+{
+    margin-top: 100px;
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    isolation: isolate;
+}
+h1::before 
+{
+    content: "";
+    position: absolute;
+    width: 20%;
+    margin: auto;
+    margin-top: 150px;
+    height: 20px;
+    bottom: 10px;
+    top: -20px;
+    background-color: #fec260;
+    transition: height 350ms;
+    transition: top 450ms;
+    z-index: -1;
+}
+h1:hover::before 
+{
+    height: 40px;
+    top: -40px;
+}
